@@ -18,7 +18,7 @@ function getGreeting(user){
 }
 
 const element = (
-	<div>
+	<div tabIndent="0">
 		{getGreeting(user)}
 		<br/>
 		{getGreeting()}
