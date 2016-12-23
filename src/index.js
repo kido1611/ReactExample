@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import logo from './logo.svg';
+import './index.css';
 
 const user = {
 	firstName: 'Muhammad',
@@ -17,8 +19,13 @@ function getGreeting(user){
 	return <h1>Hello, guest</h1>
 }
 
+
+// <img src={logo} className="app-image"/> has no children
+// so it has closed tag />
+
 const element = (
 	<div tabIndent="0">
+		<img src={logo} className="app-image"/>
 		{getGreeting(user)}
 		<br/>
 		{getGreeting()}
